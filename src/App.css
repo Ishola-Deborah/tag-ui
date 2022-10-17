@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Ubuntu" sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background-color: #1d0fe056;
+}
+.app {
+  width: 25rem;
+  margin: 2rem auto;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  padding: 1rem 1.1rem;
+  position: relative;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  gap: 9px;
+}
+.hero h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #49474786;
+}
+.hero span {
+  color: #49474786;
+  user-select: none;
+}
+
+.inputContainer {
+  display: flex;
+  margin-top: 0.8rem;
+  align-items: center;
+  border-radius: 0.1rem;
+  border: 1px solid #00000031;
+}
+
+.inputValue {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem;
+  gap: 10px;
+}
+.inputValue input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  padding: 0.2rem;
+}
+.inputValue input::placeholder {
+  text-transform: capitalize;
+  color: #0000008f;
+}
+.inputValue span {
+  color: #423a3a;
+  user-select: none;
+}
+hr {
+  /* width: 100%; */
+  background-color: rgba(0, 0, 0, 0.089);
+  margin-top: 1.4rem;
+  position: absolute;
+  height: 1px;
+}
+
+
+/*TagContainer*/
+
+.tagContainer {
+  margin-top: 2rem;
+  display: flex;
+}
+.tag_list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tagLi {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  font-weight: 200;
+  background-color: #1c0ee73f;
+  cursor: pointer;
+ font-family: 'Poppins', sans-serif;
+  margin: 0.3rem;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+.tagLi:hover {
+  background-color: #1f0ffd59;
+}
+.tagLi p:hover {
+  color: #fff;
+}
+.tagLi span {
+  color: #423a3a;
+user-select: none;
+}
+.tagLi p {
+  margin-right: 0.5rem;
+  color: #423a3a;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+}
+.delete span{
+  font-size: 1rem;
+}
+.delete span:hover{
+  color: #fff;
+}
+.footer {
+ margin-top: 1.2rem;
+ font-family: 'Poppins', sans-serif;
+ display: flex;
+
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+
+} 
+.footer a{
+  color: #1d75c781;
+  text-decoration: none;
+}
+.signature{
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  animation: animateSignature 10s infinite;
+}
+
+@keyframes animateSignature {
+  100%{
+    transform: translate(-100%, 0);
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .app {
+    width: 93%;
+  }
+}
